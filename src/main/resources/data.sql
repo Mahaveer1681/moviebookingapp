@@ -64,3 +64,9 @@ insert into users (name,email,password,contact) values ('user3', 'user3@gmail','
 insert into shows(city_id,screen_id,movie_id,start_date,end_date,show_time,show_status,theatre_id) values(1,1,1,CURRENT_DATE,CURRENT_DATE+7,CURRENT_TIME,'ONGOING',1);
 insert into shows(city_id,screen_id,movie_id,start_date,end_date,show_time,show_status,theatre_id) values(2,2,1,CURRENT_DATE,CURRENT_DATE+7,CURRENT_TIME,'ONGOING',1);
 insert into shows(city_id,screen_id,movie_id,start_date,end_date,show_time,show_status,theatre_id) values(1,2,3,CURRENT_DATE,CURRENT_DATE+7,CURRENT_TIME,'ONGOING',1);
+
+
+insert into offers (show_id,parameter,discount,operator1,condition1,condition_Joiner,operator2,condition2) values(1,'SEATCOUNT',50,'EQUALS','3','OR','GREATERTHAN','3');
+insert into offers (show_id,parameter,discount,operator1,condition1,condition_Joiner,operator2,condition2) values(1,'SHOWTIME',20,'FROM','12:00:00','AND','TO','23:59:59');
+insert into offers (show_id,parameter,discount,operator1,condition1,condition_Joiner,operator2,condition2) values(2,'SHOWTIME',20,'FROM','12:00:00','AND','TO','23:59:59');
+insert into offers (show_id,parameter,discount,operator1,condition1,condition_Joiner,operator2,condition2) values(3,'SHOWTIME',20,'FROM','12:00:00','AND','TO','23:59:59');
